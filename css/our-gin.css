@@ -1,0 +1,104 @@
+@media screen and (max-device-width: 999px) {
+  .about-our-gin {
+    display: flex;
+    flex-direction: column;
+  }
+  .ingredients > .text-container > p,
+  .ingredients > .text-container > h4 {
+    text-align: center;
+  }
+  .destillation > .text-container > p,
+  .destillation > .text-container > h4 {
+    text-align: center;
+  }
+  .packaging > .text-container > p,
+  .packaging > .text-container > h4 {
+    text-align: center;
+  }
+  .ingredients > .filter > .image-container {
+    background-image: url("../images/ingredients.png");
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+  .destillation > .filter > .image-container {
+    background-image: url("../images/destillation.jpg");
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+  .packaging > .filter > .image-container {
+    background-image: url("../images/packaging.jpg");
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+  }
+}
+@media screen and (min-device-width: 1000px) and (orientation: landscape) {
+  .about-our-gin {
+    height: auto;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vw 30vw 30vw 30vw 15vw;
+  }
+  .about-our-gin > .page-divider {
+    grid-row: 1 / 2;
+  }
+  .ingredients {
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ingredients > .filter > .image-container {
+    background-image: url("../images/ingredients.png");
+    background-size: cover;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    opacity: 0.7;
+  }
+  .ingredients > .text-container {
+    background-image: none;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .destillation {
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .destillation > .filter > .image-container {
+    background-image: url("../images/destillation.jpg");
+    background-size: cover;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .destillation > .text-container {
+    background-image: none;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .packaging {
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .packaging > .filter > .image-container {
+    background-image: url("../images/packaging.jpg");
+    background-size: cover;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+  .packaging > .text-container {
+    background-image: none;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+  .page-divider.recipies {
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+  }
+}

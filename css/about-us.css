@@ -1,0 +1,102 @@
+@media screen and (max-width: 999px) {
+  .about-us > .content-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .image-wrapper > .filter {
+    width: 100%;
+    height: 200px;
+    margin: 5px 0px 5px 0px;
+  }
+
+  .image-wrapper > .filter > .image-container {
+    width: 100%;
+    height: 200px;
+  }
+  .filter.building {
+    width: 94%;
+  }
+  .filter.destillery {
+    width: 94%;
+  }
+  .filter.storage {
+    width: 94%;
+  }
+  .destillery {
+    background-image: url("../images/Outside.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .building {
+    background-image: url("../images/architecture-retro.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+
+  .storage {
+    background-image: url("../images/barrels.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+}
+@media screen and (min-device-width: 1000px) and (orientation: landscape) {
+  .about-us > .content-block {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .image-wrapper > .filter {
+    width: 100%;
+    height: 200px;
+    margin: 5px 0px 5px 0px;
+  }
+
+  .image-wrapper > .filter > .image-container {
+    width: 100%;
+    height: 200px;
+  }
+
+  .filter.building {
+    display: none;
+  }
+  .filter.destillery {
+    display: none;
+  }
+  .destillery {
+    background-image: url("../images/Outside.jpg");
+    background-size: cover;
+    background-position: center;
+    display: none;
+  }
+
+  .building {
+    background-image: url("../images/architecture-retro.jpg");
+    background-size: cover;
+    background-position: center;
+    display: none;
+  }
+
+  .storage {
+    background-image: url("../images/barrels.jpg");
+    background-size: cover;
+    background-position-y: center;
+    background-position-x: 40px;
+  }
+}

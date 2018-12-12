@@ -1,0 +1,171 @@
+@media screen and (max-device-width: 999px) {
+  .recipies {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .recipies > .content-block > .text-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .recipies > .gin-tonic {
+    position: relative;
+    height: 100vh;
+    grid-row: 1 / 2;
+  }
+  .gin-tonic > .text-container {
+    position: absolute;
+    top: 0;
+    grid-row: 1 / 2;
+    z-index: 2;
+  }
+  .gin-tonic > .filter > .image-container {
+    position: absolute;
+    top: 0;
+    background-image: url("../images/gin-tonic.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    opacity: 0.9;
+    z-index: 1;
+  }
+  .recipies > .bramble {
+    position: relative;
+    height: 100vh;
+    grid-row: 2 / 3;
+  }
+  .bramble > .text-container {
+    position: absolute;
+    top: 0;
+    grid-row: 2 / 3;
+    z-index: 2;
+  }
+  .bramble > .filter > .image-container {
+    position: absolute;
+    top: 0;
+    background-image: url("../images/bramble.jpeg");
+    background-size: cover;
+    background-position: center;
+    grid-row: 2 / 3;
+    z-index: 1;
+  }
+  .recipies > .watermelon-fizz {
+    position: relative;
+    height: 100vh;
+    grid-row: 3 / 4;
+  }
+  .watermelon-fizz > .text-container {
+    position: absolute;
+    top: 0;
+    grid-row: 3 / 4;
+    z-index: 2;
+  }
+  .watermelon-fizz > .filter > .image-container {
+    position: absolute;
+    top: 0;
+    background-image: url("../images/watermelon-fizz.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-row: 3 / 4;
+    z-index: 1;
+  }
+}
+
+@media screen and (min-device-width: 1000px) and (orientation: landscape) {
+  .recipies {
+    height: 100%;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .recipies > .content-block > .text-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .recipies > .content-block > .text-container > ol {
+    max-width: 80%;
+  }
+  .recipies > .gin-tonic {
+    height: 100vh;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .gin-tonic > .text-container {
+    background-image: url("../images/small-background.jpg");
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .gin-tonic > .filter {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .gin-tonic > .filter > .image-container {
+    height: 100vh;
+    background-image: url("../images/gin-tonic.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    opacity: 0.9;
+  }
+  .recipies > .bramble {
+    height: 100vh;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .bramble > .text-container {
+    background-image: url("../images/small-background.jpg");
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .bramble > .filter {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .bramble > .filter > .image-container {
+    height: 100vh;
+    background-image: url("../images/bramble.jpeg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .recipies > .watermelon-fizz {
+    height: 100vh;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+  }
+  .watermelon-fizz > .text-container {
+    background-image: url("../images/small-background.jpg");
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .watermelon-fizz > .filter {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .watermelon-fizz > .filter > .image-container {
+    height: 100vh;
+    background-image: url("../images/watermelon-fizz.jpg");
+    background-size: cover;
+    background-position: center;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}

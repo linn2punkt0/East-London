@@ -1,0 +1,108 @@
+body {
+  width: 100vw;
+  height: 800vh;
+  margin: 0;
+  color: #f9ede5;
+  background-image: url("../images/big-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: black;
+}
+.EVERYTHING {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 2fr 3fr 1fr 0.6fr 0.4fr;
+  grid-template-columns: 1fr;
+}
+.hero {
+  grid-row: 1 / 2;
+}
+.about-our-gin {
+  grid-row: 2 / 3;
+}
+.recipies {
+  grid-row: 3 / 4;
+}
+.about-us {
+  grid-row: 4 / 5;
+}
+.newsletter {
+  grid-row: 5 / 6;
+}
+footer {
+  grid-row: 6 / 7;
+}
+h1 {
+  font-family: "Kumar One", sans-serif;
+  font-size: 4em;
+}
+
+h3 {
+  font-family: "Kumar One Outline", sans-serif;
+  font-size: 3em;
+}
+
+h4 {
+  font-family: "Kumar One", sans-serif;
+}
+
+h5 {
+  font-family: "Kumar One", sans-serif;
+}
+p {
+  font-family: "Chakra Petch", monospace;
+}
+ul {
+  font-family: "Chakra Petch", monospace;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  line-height: 20px;
+}
+ol {
+  font-family: "Chakra Petch", monospace;
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+  line-height: 20px;
+}
+
+.page-divider > h2 {
+  font-family: "Kumar One Outline", sans-serif;
+  text-align: center;
+  font-size: 2em;
+}
+.text-container > h2 {
+  font-family: "Kumar One Outline", sans-serif;
+  font-size: 2.5em;
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  max-width: 1000px;
+  margin: auto;
+}
+.text-container > h4 {
+  width: 80%;
+  margin: 10px;
+}
+.text-container > p {
+  width: 80%;
+  margin: 10px;
+}
+.image-container {
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+  opacity: 0.8;
+}
+.filter {
+  height: 100%;
+  width: 100%;
+  background-color: grey;
+  z-index: 1;
+}
